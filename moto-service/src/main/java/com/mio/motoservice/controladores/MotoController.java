@@ -29,7 +29,7 @@ public class MotoController {
 		}
 		return ResponseEntity.ok(motos);
 	}
-	
+	///jjaaj
 	@GetMapping("/{id}")
 	public ResponseEntity<Moto> obtenerMoto(@PathVariable("id") int id){
 		Moto moto = motoService.getMotoById(id);
