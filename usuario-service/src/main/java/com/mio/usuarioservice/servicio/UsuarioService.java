@@ -50,6 +50,8 @@ public class UsuarioService {
 
 	public List<Moto> getMotos(int usuarioId) {
 		List<Moto> motos = restTemplate.getForObject("http://moto-service/moto/usuario/" + usuarioId, List.class);
+//		Lo de abajo funciona:
+//		List<Moto> motos = motoFeignClient.getMotos(usuarioId);
 		return motos;
 	}
 
